@@ -1,3 +1,7 @@
+<div style="text-align:center">
+    <img src="./logo.png" alt="knocker" style="align-content: center">
+</div>
+
 # knocker Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
