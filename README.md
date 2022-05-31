@@ -2,67 +2,70 @@
     <img src="./logo.png" alt="knocker" style="align-content: center">
 </div>
 
-# knocker Project
+# <center>knocker</center>
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+<p style="text-align:center">
+  <a target="_blank" href="https://www.oracle.com/java/technologies/javase/javase-jdk11-downloads.html">
+    <img alt="jdk version" src="https://img.shields.io/badge/JDK-11+-green.svg" />
+  </a>
+</p>
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+## 内容列表
 
-## Running the application in dev mode
+- [背景](#背景)
+- [模块介绍](#模块介绍)
+- [构建](#构建)
+- [依赖说明](#依赖说明)
+- [使用说明](#使用说明)
+- [维护者](#维护者)
+- [如何贡献](#如何贡献)
+- [使用许可](#使用许可)
 
-You can run your application in dev mode that enables live coding using:
+## 背景
 
-```shell script
-./gradlew quarkusDev
+> knocker
+
+## 模块介绍
+
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
-
-## Packaging and running the application
-
-The application can be packaged using:
-
-```shell script
-./gradlew build
 ```
 
-It produces the `quarkus-run.jar` file in the `build/quarkus-app/` directory. Be aware that it’s not
-an _über-jar_ as the dependencies are copied into the `build/quarkus-app/lib/` directory.
+## 构建
 
-The application is now runnable using `java -jar build/quarkus-app/quarkus-run.jar`.
+### 1.检查源代码文件是否增加license
 
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./gradlew build -Dquarkus.package.type=uber-jar
+```
+gradle licenseFormat
 ```
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar build/*-runner.jar`.
+### 2.清除构建缓存
 
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./gradlew build -Dquarkus.package.type=native
+```
+gradle clean
 ```
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container
-using:
+## 依赖说明
 
-```shell script
-./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
-```
 
-You can then execute your native executable with: `./build/knocker-1.0-SNAPSHOT-runner`
+## 使用说明
 
-If you want to learn more about building native executables, please
-consult https://quarkus.io/guides/gradle-tooling.
 
-## Provided Code
+## 维护者
 
-### RESTEasy Reactive
+[@单开宇](https://github.com/conifercone)
 
-Easily start your Reactive RESTful Web Services
+## 如何贡献
 
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+非常欢迎你的加入！[提一个 Issue](https://github.com/conifercone/knocker/issues/new) 或者提交一个 Pull Request。
+
+标准 Readme 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范。
+
+## 贡献者
+
+[@单开宇](https://github.com/conifercone)
+
+## 使用许可
+
+[Apache License 2.0](LICENSE) © conifercone
+
