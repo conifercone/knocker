@@ -1,4 +1,4 @@
-package cn.conifercone;
+package cn.conifercone.knocker;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
